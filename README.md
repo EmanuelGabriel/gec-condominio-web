@@ -13,14 +13,11 @@ GEC - GERENCIADOR ELETRÔNICO DE CONDOMÍNIOS WEB
 
 Status do Projeto: Em desenvolvimento :warning:
 
-**Autor**
-Emanuel Gabriel Sousa
-e-mail: emanuel.gabriel.sousa@hotmail.com
 
 ### Autor: 
-|name|email|present|receiveCertificate|course|
+|nome|e-mail|data|curso|
 | -------- | -------- | -------- |-------- | -------- |
-|Emanuel Gabriel Sousa|emanuel.gabriel.sousa@hotmail.com|true|false|Eu que fiz|
+|Emanuel Gabriel Sousa|emanuel.gabriel.sousa@hotmail.com|17/05/2022|Eu que fiz mesmo hehehe|
 
 
 
