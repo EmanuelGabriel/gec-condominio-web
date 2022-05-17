@@ -3,7 +3,7 @@
 
 **PROJETO**
 
-GEC - GERENCIADOR ELETRÔNICO DE CONDOMÍNIOS WEB
+<h1 align="center"> GEC - GERENCIADOR ELETRÔNICO DE CONDOMÍNIOS WEB </h1>
 
 
 ### TECNOLOGIAS UTILIZADAS 
@@ -15,7 +15,7 @@ Status do Projeto: Em desenvolvimento :warning:
 
 
 ### Autor: 
-|nome|e-mail|data|curso|
+|nome|e-mail|data|mensagem|
 | -------- | -------- | -------- |-------- |
 |Emanuel Gabriel Sousa|emanuel.gabriel.sousa@hotmail.com|17/05/2022|Eu que fiz mesmo hehehe|
 
