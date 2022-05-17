@@ -1,6 +1,6 @@
-# [Template default para criação de projetos FrontEnd](https://tce.pi.gov.br) 
+# [Template do projeto de gerenciamento web eletrônico de condomínios - FrontEnd](https://github.com/EmanuelGabriel) 
 
-**Propósito**
+**PROJETO**
 
-	Este repositório tem o propósito para servir como um template default para criação de futuros projetos angular.
+
 
