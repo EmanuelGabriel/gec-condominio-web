@@ -1,0 +1,158 @@
+<?xml version="1.0"?>
+<svg width="640" height="480" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <!-- Created with SVG-edit - http://svg-edit.googlecode.com/ -->
+
+ <g>
+  <title>Layer 1</title>
+  <metadata id="svg_228">image/svg+xml</metadata>
+
+  <defs transform="translate(120 -16) translate(-98 -27)">
+   <linearGradient id="svg_220">
+    <stop offset="0.0000%" stop-color="#eab200" id="svg_227"/>
+    <stop offset="14.0000%" stop-color="#ffcb00" id="svg_226"/>
+    <stop offset="31.0000%" stop-color="#ffec00" id="svg_225"/>
+    <stop offset="47.0000%" stop-color="#fffcdb" id="svg_224"/>
+    <stop offset="63.0000%" stop-color="#ffec00" id="svg_223"/>
+    <stop offset="78.0000%" stop-color="#ffcd00" id="svg_222"/>
+    <stop offset="100.0000%" stop-color="#d59c00" id="svg_221"/>
+   </linearGradient>
+   <linearGradient xlink:href="#svg_220" id="svg_219" x1="0" y1="0" x2="0" y2="1" gradientTransform="matrix(0.06975647,-0.99756405,0.99756405,0.06975647,-0.03366026,0.96390379)" gradientUnits="objectBoundingBox"/>
+  </defs>
+  <path fill="url(#svg_219)" d="m320.549286,302.696899c89.842804,-6.088409 175.193817,11.946594 250.504974,48.752197l-0.000977,-0.036194c-63.891479,-23.833313 -133.671295,-34.694397 -206.384674,-29.766815c-93.005402,6.302704 -179.815613,37.722107 -254.636711,87.4888l11.553902,-45.862488c64.388306,-34.768921 123.240189,-55.444 198.963486,-60.5755z" id="svg_218"/>
+  <defs transform="translate(120 -16) translate(-98 -27)">
+   <linearGradient id="svg_212">
+    <stop offset="0.0000%" stop-color="#005d2d" id="svg_217"/>
+    <stop offset="32.0000%" stop-color="#009136" id="svg_216"/>
+    <stop offset="57.0000%" stop-color="#d0e5c9" id="svg_215"/>
+    <stop offset="79.0000%" stop-color="#00933a" id="svg_214"/>
+    <stop offset="100.0000%" stop-color="#005d2d" id="svg_213"/>
+   </linearGradient>
+   <linearGradient xlink:href="#svg_212" id="svg_211" x1="0" y1="0" x2="0" y2="1" gradientTransform="matrix(0.08715574,-0.9961947,0.9961947,0.08715574,-0.04167522,0.95451948)" gradientUnits="objectBoundingBox"/>
+  </defs>
+  <path fill="url(#svg_211)" d="m276.009003,270.160004c89.84201,-6.382996 175.194,12.524994 250.504974,51.113983l-0.000977,-0.037994c-63.891998,-24.988007 -133.671997,-36.375 -206.38501,-31.208984c-93.005997,6.608002 -179.815994,39.548981 -254.636795,91.725983l11.554008,-48.083984c64.387794,-36.451996 123.239799,-58.128998 198.963799,-63.509003l0,0z" id="svg_210"/>
+  <g id="svg_118">
+   <defs transform="translate(120 -16) translate(-98 -27)">
+    <linearGradient id="svg_201">
+     <stop offset="0.0000%" stop-color="#102a83" id="svg_206"/>
+     <stop offset="19.0000%" stop-color="#004394" id="svg_205"/>
+     <stop offset="37.0000%" stop-color="#009ee0" id="svg_204"/>
+     <stop offset="50.0000%" stop-color="#009ee0" id="svg_203"/>
+     <stop offset="100.0000%" stop-color="#9edbf4" id="svg_202"/>
+    </linearGradient>
+    <linearGradient xlink:href="#svg_201" id="svg_200" x1="0" y1="0" x2="0" y2="1" gradientTransform="matrix(0.61566148,-0.78801075,0.78801075,0.61566148,-0.20183611,0.58617464)" gradientUnits="objectBoundingBox"/>
+   </defs>
+   <path fill="url(#svg_200)" d="m314.145813,95.519699l0.026611,-14.853203l24.851593,62.466911l-4.168793,4.4422l-20.709412,-52.055908z" id="svg_199"/>
+   <defs transform="translate(120 -16) translate(-98 -27)">
+    <linearGradient id="svg_193">
+     <stop offset="0.0000%" stop-color="#102a83" id="svg_198"/>
+     <stop offset="19.0000%" stop-color="#004394" id="svg_197"/>
+     <stop offset="37.0000%" stop-color="#009ee0" id="svg_196"/>
+     <stop offset="50.0000%" stop-color="#009ee0" id="svg_195"/>
+     <stop offset="100.0000%" stop-color="#ffffff" id="svg_194"/>
+    </linearGradient>
+    <linearGradient xlink:href="#svg_193" id="svg_192" x1="0" y1="0" x2="0" y2="1" gradientTransform="matrix(-0.78801075,-0.61566148,0.61566148,-0.78801075,0.58617464,1.2018361)" gradientUnits="objectBoundingBox"/>
+   </defs>
+   <path fill="url(#svg_192)" d="m334.855194,147.575607l4.168793,-4.4422l68.387604,5.276306l-15.566376,3.562897l-56.990021,-4.397003z" id="svg_191"/>
+   <defs transform="translate(120 -16) translate(-98 -27)">
+    <linearGradient id="svg_185">
+     <stop offset="0.0000%" stop-color="#102a83" id="svg_190"/>
+     <stop offset="19.0000%" stop-color="#004394" id="svg_189"/>
+     <stop offset="37.0000%" stop-color="#009ee0" id="svg_188"/>
+     <stop offset="50.0000%" stop-color="#009ee0" id="svg_187"/>
+     <stop offset="100.0000%" stop-color="#ffffff" id="svg_186"/>
+    </linearGradient>
+    <linearGradient xlink:href="#svg_185" id="svg_184" x1="0" y1="0" x2="0" y2="1" gradientTransform="matrix(-0.78801075,-0.61566148,0.61566148,-0.78801075,0.58617464,1.2018361)" gradientUnits="objectBoundingBox"/>
+   </defs>
+   <path fill="url(#svg_184)" d="m391.845215,151.972595l15.566406,-3.562897l-51.728699,42.937988l-6.945007,-3.593704l43.1073,-35.781387z" id="svg_183"/>
+   <defs transform="translate(120 -16) translate(-98 -27)">
+    <linearGradient id="svg_177">
+     <stop offset="0.0000%" stop-color="#102a83" id="svg_182"/>
+     <stop offset="19.0000%" stop-color="#004394" id="svg_181"/>
+     <stop offset="37.0000%" stop-color="#009ee0" id="svg_180"/>
+     <stop offset="50.0000%" stop-color="#009ee0" id="svg_179"/>
+     <stop offset="100.0000%" stop-color="#9edbf4" id="svg_178"/>
+    </linearGradient>
+    <linearGradient xlink:href="#svg_177" id="svg_176" x1="0" y1="0" x2="0" y2="1" gradientTransform="matrix(-0.91354546,0.40673664,-0.40673664,-0.91354546,1.1601411,0.75340441)" gradientUnits="objectBoundingBox"/>
+   </defs>
+   <path fill="url(#svg_176)" d="m348.737915,187.753998l6.945007,3.593704l16.11499,66.670486l-9.631104,-14.705292l-13.428894,-55.558899z" id="svg_175"/>
+   <defs transform="translate(120 -16) translate(-98 -27)">
+    <linearGradient id="svg_169">
+     <stop offset="0.0000%" stop-color="#102a83" id="svg_174"/>
+     <stop offset="19.0000%" stop-color="#004394" id="svg_173"/>
+     <stop offset="37.0000%" stop-color="#009ee0" id="svg_172"/>
+     <stop offset="50.0000%" stop-color="#009ee0" id="svg_171"/>
+     <stop offset="100.0000%" stop-color="#9edbf4" id="svg_170"/>
+    </linearGradient>
+    <linearGradient xlink:href="#svg_169" id="svg_168" x1="0" y1="0" x2="0" y2="1" gradientTransform="matrix(0.98480775,0.17364818,-0.17364818,0.98480775,0.09442021,-0.07922797)" gradientUnits="objectBoundingBox"/>
+   </defs>
+   <path fill="url(#svg_168)" d="m362.166809,243.312897l9.631104,14.705292l-56.822205,-35.928375l-0.1604,-8.717316l47.351501,29.940399z" id="svg_167"/>
+   <defs transform="translate(120 -16) translate(-98 -27)">
+    <linearGradient id="svg_161">
+     <stop offset="0.0000%" stop-color="#102a83" id="svg_166"/>
+     <stop offset="19.0000%" stop-color="#004394" id="svg_165"/>
+     <stop offset="44.0000%" stop-color="#009ee0" id="svg_164"/>
+     <stop offset="58.0000%" stop-color="#009ee0" id="svg_163"/>
+     <stop offset="100.0000%" stop-color="#9edbf4" id="svg_162"/>
+    </linearGradient>
+    <linearGradient xlink:href="#svg_161" id="svg_160" x1="0" y1="0" x2="0" y2="1" gradientTransform="matrix(-0.48480962,-0.87461971,0.87461971,-0.48480962,0.30509496,1.1797147)" gradientUnits="objectBoundingBox"/>
+   </defs>
+   <path fill="url(#svg_160)" d="m314.815308,213.372498l0.1604,8.717316l-58.428284,35.928375l9.577393,-14.705292l48.690491,-29.940399z" id="svg_159"/>
+   <defs transform="translate(120 -16) translate(-98 -27)">
+    <linearGradient id="svg_153">
+     <stop offset="0.0000%" stop-color="#102a83" id="svg_158"/>
+     <stop offset="19.0000%" stop-color="#004394" id="svg_157"/>
+     <stop offset="37.0000%" stop-color="#009ee0" id="svg_156"/>
+     <stop offset="50.0000%" stop-color="#009ee0" id="svg_155"/>
+     <stop offset="100.0000%" stop-color="#9edbf4" id="svg_154"/>
+    </linearGradient>
+    <linearGradient xlink:href="#svg_153" id="svg_152" x1="0" y1="0" x2="0" y2="1" gradientTransform="matrix(0.98480775,0.17364818,-0.17364818,0.98480775,0.09442021,-0.07922797)" gradientUnits="objectBoundingBox"/>
+   </defs>
+   <path fill="url(#svg_152)" d="m266.124817,243.312897l-9.577423,14.705292l16.610901,-65.144089l6.809113,-3.8479l-13.84259,54.286697z" id="svg_151"/>
+   <defs transform="translate(120 -16) translate(-98 -27)">
+    <linearGradient id="svg_145">
+     <stop offset="0.0000%" stop-color="#102a83" id="svg_150"/>
+     <stop offset="19.0000%" stop-color="#004394" id="svg_149"/>
+     <stop offset="37.0000%" stop-color="#009ee0" id="svg_148"/>
+     <stop offset="50.0000%" stop-color="#009ee0" id="svg_147"/>
+     <stop offset="100.0000%" stop-color="#9edbf4" id="svg_146"/>
+    </linearGradient>
+    <linearGradient xlink:href="#svg_145" id="svg_144" x1="0" y1="0" x2="0" y2="1" gradientTransform="matrix(0.61566148,-0.78801075,0.78801075,0.61566148,-0.20183611,0.58617464)" gradientUnits="objectBoundingBox"/>
+   </defs>
+   <path fill="url(#svg_144)" d="m279.967407,189.026199l-6.809082,3.8479l-52.22522,-44.464401l15.513306,3.562897l43.520996,37.053604z" id="svg_143"/>
+   <defs transform="translate(120 -16) translate(-98 -27)">
+    <linearGradient id="svg_137">
+     <stop offset="0.0000%" stop-color="#102a83" id="svg_142"/>
+     <stop offset="19.0000%" stop-color="#004394" id="svg_141"/>
+     <stop offset="37.0000%" stop-color="#009ee0" id="svg_140"/>
+     <stop offset="50.0000%" stop-color="#009ee0" id="svg_139"/>
+     <stop offset="100.0000%" stop-color="#9edbf4" id="svg_138"/>
+    </linearGradient>
+    <linearGradient xlink:href="#svg_137" id="svg_136" x1="0" y1="0" x2="0" y2="1" gradientTransform="matrix(-0.82903757,0.5591929,-0.5591929,-0.82903757,1.1941152,0.63492233)" gradientUnits="objectBoundingBox"/>
+   </defs>
+   <path fill="url(#svg_136)" d="m236.446396,151.972595l-15.51329,-3.562897l67.088898,-4.332901l4.331787,4.284988l-55.907394,3.610809z" id="svg_135"/>
+   <defs transform="translate(120 -16) translate(-98 -27)">
+    <linearGradient id="svg_129">
+     <stop offset="0.0000%" stop-color="#102a83" id="svg_134"/>
+     <stop offset="19.0000%" stop-color="#004394" id="svg_133"/>
+     <stop offset="37.0000%" stop-color="#009ee0" id="svg_132"/>
+     <stop offset="50.0000%" stop-color="#009ee0" id="svg_131"/>
+     <stop offset="100.0000%" stop-color="#9edbf4" id="svg_130"/>
+    </linearGradient>
+    <linearGradient xlink:href="#svg_129" id="svg_128" x1="0" y1="0" x2="0" y2="1" gradientTransform="matrix(-0.82903757,0.5591929,-0.5591929,-0.82903757,1.1941152,0.63492233)" gradientUnits="objectBoundingBox"/>
+   </defs>
+   <path fill="url(#svg_128)" d="m292.35379,148.361801l-4.331787,-4.285004l26.150391,-63.410301l-0.026611,14.853203l-21.791992,52.842102z" id="svg_127"/>
+   <defs transform="translate(120 -16) translate(-98 -27)">
+    <linearGradient id="svg_121">
+     <stop offset="0.0000%" stop-color="#102a83" id="svg_126"/>
+     <stop offset="14.0000%" stop-color="#102b83" id="svg_125"/>
+     <stop offset="52.0000%" stop-color="#008bd0" id="svg_124"/>
+     <stop offset="75.0000%" stop-color="#97d8f3" id="svg_123"/>
+     <stop offset="100.0000%" stop-color="#9edbf4" id="svg_122"/>
+    </linearGradient>
+    <linearGradient xlink:href="#svg_121" id="svg_120" x1="0" y1="0" x2="0" y2="1" gradientTransform="matrix(-0.82903757,0.5591929,-0.5591929,-0.82903757,1.1941152,0.63492233)" gradientUnits="objectBoundingBox"/>
+   </defs>
+   <path fill="url(#svg_120)" d="m314.145813,95.519897l20.7099,52.055298l56.989685,4.396698l-43.107788,35.782303l13.429199,55.559097l-47.35199,-29.940704l-48.689911,29.940704l13.842712,-54.286591l-43.521317,-37.05481l55.907211,-3.610291l21.792297,-52.841705z" id="svg_119"/>
+  </g>
+  <g id="svg_116"/>
+ </g>
+</svg>

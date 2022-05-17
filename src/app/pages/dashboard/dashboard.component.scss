@@ -1,0 +1,39 @@
+.cor-icone{
+  color: #97a5af !important;
+}
+
+.card:hover {
+box-shadow: 0 0 8px rgb(0, 0, 200);
+}
+
+.icone-card{
+padding: 40px !important;
+}
+
+.icone-card i, .icone-card svg {
+  font-size: 3.2rem !important;
+}
+
+.icone-atendimento{
+background-color: #3d87f5 !important;
+}
+
+.icone-equipamento{
+background-color: #349da7 !important;
+}
+
+.icone-manutencao{
+background-color: #a5721c !important;
+}
+
+.icone-funcionalidade{
+background-color: #435d28 !important;
+}
+
+button:focus {
+  outline: none !important;
+}
+
+.card-contagem {
+margin-bottom: 0 !important;
+}

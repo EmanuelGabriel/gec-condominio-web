@@ -1,0 +1,88 @@
+<nav class="navbar navbar-vertical navbar-expand-md navbar-light" id="sidenav-main">
+  <div class="container-fluid">
+    <!-- Toggler -->
+    <button class="navbar-toggler" type="button" (click)="isCollapsed = !isCollapsed"
+      aria-controls="sidenav-collapse-main">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- Brand -->
+    <span class="navbar-brand pt-0" id="logo-central">
+      <img src="./assets/img/brand/ic_condominio.svg" class="navbar-brand-img" alt="..." />
+    </span>
+    <span class="w-100 mb-3" style="margin-left: -1.4rem; display: none;" id="logo-esquerda">
+      <img src="./assets/img/brand/ic_condominio.svg" class="navbar-brand-img" alt="..." />
+    </span>
+    <!-- User -->
+    <ul class="nav align-items-center d-md-none">
+      <li class="nav-item" ngbDropdown placement="bottom-right">
+        <a class="nav-link" role="button" ngbDropdownToggle>
+          <div class="media align-items-center">
+            <span class="mb-0 text-sm font-weight-bold">{{ username | uppercase}}</span>
+          </div>
+        </a>
+        <div class="dropdown-menu-arrow dropdown-menu-right" ngbDropdownMenu>
+          <div class="dropdown-header noti-title">
+            <h6 class="text-overflow m-0">Bem-vindo!</h6>
+          </div>
+          <!-- <a routerLinkActive="active" [routerLink]="['/user-profile']" class="dropdown-item">
+            <i class="ni ni-single-02"></i>
+            <span>Meu Perfil</span>
+          </a> -->
+          <div class="dropdown-divider"></div>
+          <a href="#!" (click)="logout()" class="dropdown-item">
+            <i class="ni ni-user-run"></i>
+            <span>Sair</span>
+          </a>
+        </div>
+      </li>
+    </ul>
+    <!-- Collapse -->
+    <div class="collapse navbar-collapse" [ngbCollapse]="isCollapsed" id="sidenav-collapse-main">
+      <!-- Collapse header -->
+      <div class="navbar-collapse-header d-md-none">
+        <div class="row">
+          <div class="col-6 collapse-brand">
+            <span>
+              <img src="./assets/img/brand/tce.svg" />
+            </span>
+          </div>
+          <div class="col-6 collapse-close">
+            <button type="button" class="navbar-toggler" (click)="isCollapsed = !isCollapsed">
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Navigation -->
+      <ul class="navbar-nav">
+        <li *ngFor="let menuItem of menuItems" class="{{ menuItem.class }} nav-item">
+          <a *ngIf="menuItem.title !== 'Cadastrar'" routerLinkActive="active" [routerLink]="[menuItem.path]"
+            class="nav-link" title="{{menuItem.title}}">
+            <i class="{{ menuItem.icon }}"></i>
+            <span style="margin-bottom: auto"> {{ menuItem.title }} </span>
+          </a>
+
+          <div *ngIf="menuItem.title === 'Cadastrar'">
+            <a class="nav-link" [attr.aria-expanded]="isCollapsedMenu" role="button" aria-expanded="false" data-toggle="collapse" data-target="#submenu"
+              (click)="isCollapsedMenu = !isCollapsedMenu" aria-controls="submenu" title="{{menuItem.title}}">
+              <i class="{{ menuItem.icon }}"></i>
+              <span style="margin-bottom: auto"> {{ menuItem.title }} </span>
+            </a>
+            <div class="collapse" id="submenu" [ngbCollapse]="!isCollapsedMenu">
+              <ul class="list-unstyled">
+                <li class="" *ngFor="let item of subMenu">
+                  <a class="nav-link" role="button" title="{{ item.nome }}"
+                    (click)="abrirDialogoCadastroSituacao()">
+                    <i class="{{ item.icon }} submenu"></i>
+                    <span> {{ item.nome }} </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

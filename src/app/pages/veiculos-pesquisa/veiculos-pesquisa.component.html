@@ -1,0 +1,231 @@
+<!-- INSERIR COMPONENT DE SPINNER -->
+<ngx-spinner bdColor="rgba(0,0,0,0.5)" size="medium" color="#fff" type="ball-scale-multiple" [fullScreen]="true">
+</ngx-spinner>
+
+<div class="header pb-8 pt-5 pt-lg-8 d-flex align-items-center" style="
+    min-height: 515px;
+    background-size: cover;
+    background-position: center top;
+  ">
+  <!-- Mask -->
+  <span class="mask bg-gradient-primary"></span>
+  <!-- Header container -->
+  <div class="container-fluid d-flex align-items-center"></div>
+</div>
+
+<!-- CONTAINER-FLUID -->
+<div class="container-fluid" style="margin-top: -28rem">
+
+  <div class="row">
+    <div class="col-xl-12 order-xl-1">
+      <div class="card bg-secondary shadow">
+        <div class="card-header bg-white border-0 mb--4">
+          <div class="row align-items-center justify-content-between">
+            <!-- HEADER -->
+            <h3 class="col-6">Filtrar por</h3>
+
+            <!-- BOTÃO ADICIONAR -->
+            <div class="col-6">
+              <div class="row">
+                <div class="col-12" style="text-align: end">
+                  <button class="btn btn-icon btn-success" type="button" (click)="irParaPaginaCadastroVeiculo()">
+                    <span class="btn-inner--icon"><i class="fa fa-plus"></i></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- FORMULÁRIO DE PESQUISAR DE VEÍCULOS -->
+        <div class="card-body bg-white">
+
+          <h6 class="heading-small text-muted mb-2 mt--2">Veículos</h6>
+
+          <!-- FORM -> #formPesquisarCp -->
+          <form #formPesquisarCp="ngForm" class="form-row align-items-end justify-content-between">
+
+            <!-- INPUT - NUMERO VAGA -->
+            <div class="form-group col-lg-2">
+              <label class="form-control-label" for="numeroVaga">Número da Vaga</label>
+              <input type="text" id="numeroVaga" name="numeroVaga" [(ngModel)]="filtro.numeroVaga"
+                class="form-control" placeholder="000" mask="000" style="text-transform: uppercase"/>
+            </div>
+
+            <!-- INPUT - NOME DO RESPONSÁVEL -->
+            <div class="form-group col-lg-6">
+              <label class="form-control-label" for="nomeResponsavel">Nome do Responsável</label>
+              <input type="text" id="nomeResponsavel" name="nomeResponsavel"  class="form-control"  [(ngModel)]="filtro.nomeResponsavel"
+                placeholder="Responsável" />
+            </div>
+
+            <!-- INPUT - NÚMERO DA PLACA  -->
+            <div class="form-group col-lg-2">
+              <label class="form-control-label" for="numeroPlaca">N.º da Placa</label>
+              <input type="text" id="numeroPlaca" name="numeroPlaca" class="form-control"  [(ngModel)]="filtro.numeroPlaca"
+                />
+            </div>
+
+            <!-- INPUT - COR DO VEÍCULO -->
+            <div class="form-group col-lg-2">
+              <label for="corVeiculo" class="form-control-label">Cor do Veículo</label>
+              <input id="corVeiculo" type="text" class="form-control" name="corVeiculo"  [(ngModel)]="filtro.corVeiculo" />
+            </div>
+
+             <!-- INPUT - BLOCOS -->
+              <div class="form-group col-lg-2">
+                <label class="form-control-label" for="bloco">Blocos</label>
+                <select class="form-control" [(ngModel)]="filtro.bloco" name="blocoSelect">
+                  <option [ngValue]="undefined">Todos</option>
+                  <option *ngFor="let bloco of blocos" [ngValue]="bloco.valor">
+                    {{ bloco.label }}
+                  </option>
+                </select>
+              </div>
+
+              <!-- INPUT - MODELO DO VEÍCULO -->
+              <div class="form-group col-lg-6">
+                <label class="form-control-label" for="modeloVeiculo">Modelo do Veículo</label>
+                <input type="text" id="modeloVeiculo" name="modeloVeiculo"  class="form-control" [(ngModel)]="filtro.modeloVeiculo"
+                  placeholder="Modelo do veículo" />
+              </div>
+
+            <!-- INPUT - MARCA DO VEÍCULO -->
+            <div class="form-group col-lg-2">
+              <label for="marcaVeiculo" class="form-control-label">Marca do Veículo</label>
+              <input id="marcaVeiculo" type="text" class="form-control" name="marcaVeiculo"  [(ngModel)]="filtro.marcaVeiculo" />
+            </div>
+
+            <!-- INPUT - NÚMERO DO APARTAMENTO -->
+            <div class="form-group col-lg-2">
+              <label class="form-control-label" for="numeroApartamento">N.º do Apto</label>
+              <select class="form-control" [(ngModel)]="filtro.numeroApartamento" name="numeroApartamentoSelect">
+                <option [ngValue]="undefined">Todos</option>
+                <option *ngFor="let apt of numerosApto" [ngValue]="apt.valor">
+                  {{ apt.label }}
+                </option>
+              </select>
+            </div>
+
+
+          </form> <!-- FIMT tag FORM -->
+
+          <!-- ROW - BOTÃO PESQUISAR -->
+          <div class="row">
+            <!-- BOTÃO PESQUISAR -->
+            <div class="col-12">
+              <div style="text-align: end">
+                <button class="btn btn-icon btn-3 btn-primary" type="button" (click)="pesquisar()">
+                  <span class="btn-inner--icon"><i class="fa fa-search"></i></span>
+                  <span class="btn-inner--text">Pesquisar</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <hr class="my-4" />
+
+          <!-- INFORMAÇÕES NA TABLE -->
+          <div class="row">
+
+            <div class="col-md-12">
+              <div class="form-group">
+
+                <!-- TABELA DE VEÍCULOS -->
+                <div class="table-responsive">
+                  <table class="table align-items-center table-flush">
+                    <thead class="thead-light">
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">N.º da Vaga</th>
+                        <th scope="col">N.º da Placa</th>
+                        <th scope="col">Marca/Veículo</th>
+                        <th scope="col">Modelo/Veículo</th>
+                        <th scope="col">Cor do Veículo</th>
+                        <th scope="col">Nome do Responsável</th>
+                        <th scope="col">N.º do Apartamento</th>
+                        <th scope="col">Bloco</th>
+                        <th scope="col">
+                          Ações
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr *ngFor="let ca of veiculos; let i = index">
+                        <td>
+                          <!-- hash: 1d48fbcb-1dd0-40a7-b8dd-84716ca7f9ee --- '1dd0-40a7' -->
+                          <span [ngbTooltip]="ca.id" placement="bottom" >
+                            {{ ca.id | slice:9:18 | uppercase }}
+                          </span>
+                        </td>
+                        <td>{{ ca.numeroVaga }}</td>
+                        <td>{{ ca.numeroPlaca }}</td>
+                        <td>{{ ca.marcaVeiculo }}</td>
+                        <td>{{ ca.modeloVeiculo }}</td>
+                        <td>{{ ca.corVeiculo }}</td>
+                        <td>{{ ca.nomeResponsavel }}</td>
+                        <td style="text-align: center;">{{ ca.numeroApartamento }}</td>
+                        <td style="text-align: center;">{{ ca.bloco }}</td>
+                        <td>
+                          <button class="btn btn-sm btn-warning" placement="top" ngbTooltip="Visualizar" >
+                            <span class="btn-inner--icon"><i class="fas fa-eye"></i></span>
+                          </button>
+
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                    <!-- COMPONENT PAGINATION --->
+                  <div class="pagination justify-content-center">
+
+                    <ngb-pagination [collectionSize]="collectionSize" [(page)]="page" [pageSize]="size" (pageChange)="pesquisar()">
+                    </ngb-pagination>
+
+                    <!--
+                    <select class="form-select" style="width: auto" [(ngModel)]="page" (ngModelChange)="pesquisar()">
+                      <option [ngValue]="5">5</option>
+                      <option [ngValue]="10">10</option>
+                      <option [ngValue]="15">15</option>
+                    </select> --->
+
+                  </div>
+
+                  <!-- REGISTRO NÃO ENCONTRADO -->
+                  <table class="table pd-b-5 table-striped table-hover" *ngIf="!(veiculos?.length > 0)">
+                    <tbody>
+                      <tr style="background: white">
+                        <td>Nenhum registro encontrado</td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                  <br />
+
+                  <div class="pagination justify-content-start">
+                    <pre class="form-control-label">Total de {{ collectionSize }} registros</pre>
+                  </div>
+
+                </div>
+              </div>
+
+              <!-- BOTÃO DE EXPORTAR PARA EXCEL -->
+              <button class="btn btn-icon btn-3 btn-primary" type="button"
+                [disabled]="formPesquisarCp.invalid">
+                <span class="btn-inner--icon"><i class="fa fa-table"></i></span>
+                <span class="btn-inner--text">Exportar</span>
+              </button>
+
+            </div>
+
+          </div> <!-- TAG - ROW TABLE -->
+
+        </div>
+      </div>
+    </div>
+
+  </div> <!-- TAG - ROW -->
+
+
+</div>

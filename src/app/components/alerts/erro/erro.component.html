@@ -1,0 +1,14 @@
+<alert class="alert-dismissible" *ngIf = "this.show">
+    <div role="alert" class="alert alert-danger alert-dismissible">
+        <button aria-label="Close" class="close" type="button" (click)="onChangeDisplay()">
+            <span aria-hidden="true">×</span>
+            <span class="sr-only">Close</span>
+        </button>
+        <span class=" alert-icon" *ngIf = "this.icon">
+            <i class={{icon}}></i>
+        </span>
+        <span class=" alert-text">
+            <strong *ngIf = "this.title"> {{title}} </strong> <i *ngIf = "this.description"> {{description}}</i> 
+        </span>
+    </div>
+</alert>
