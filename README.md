@@ -16,7 +16,7 @@ Status do Projeto: Em desenvolvimento :warning:
 
 ### Autor: 
 |nome|e-mail|data|curso|
-| -------- | -------- | -------- |-------- | -------- |
+| -------- | -------- | -------- |-------- |
 |Emanuel Gabriel Sousa|emanuel.gabriel.sousa@hotmail.com|17/05/2022|Eu que fiz mesmo hehehe|
 
 
