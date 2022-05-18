@@ -48,8 +48,10 @@
 
             <!-- INPUT - NUMERO VAGA -->
             <div class="form-group col-lg-2">
-              <label class="form-control-label" for="numeroVaga">Número da Vaga</label>
+              <label class="form-control-label" for="numeroVaga">N.º da Vaga</label>
               <input type="text" id="numeroVaga" name="numeroVaga" [(ngModel)]="filtro.numeroVaga"
+                (keydown.enter)="pesquisar()"
+                (keydown.tab)="pesquisar()"
                 class="form-control" placeholder="000" mask="000" style="text-transform: uppercase"/>
             </div>
 
@@ -61,10 +63,15 @@
             </div>
 
             <!-- INPUT - NÚMERO DA PLACA  -->
+            <!-- Placas contavam com a sequência ABC 1234,
+              agora um dos números será substituído por uma letra.
+              Em carros, será ABC 1C34 e, em motos, ABC 12D4.  -->
             <div class="form-group col-lg-2">
               <label class="form-control-label" for="numeroPlaca">N.º da Placa</label>
-              <input type="text" id="numeroPlaca" name="numeroPlaca" class="form-control"  [(ngModel)]="filtro.numeroPlaca"
-                />
+              <input type="text" id="numeroPlaca" name="numeroPlaca" class="form-control" [(ngModel)]="filtro.numeroPlaca"
+                style="text-transform: uppercase;" mask="UUU-9999||AAA-9A99"
+                (keydown.enter)="pesquisar()"
+                (keydown.tab)="pesquisar()"/>
             </div>
 
             <!-- INPUT - COR DO VEÍCULO -->

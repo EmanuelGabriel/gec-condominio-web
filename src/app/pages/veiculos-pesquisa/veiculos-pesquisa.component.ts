@@ -60,6 +60,8 @@ export class VeiculosPesquisaComponent implements OnInit {
     { valor: '308', label: '308'},
   ]
 
+
+
   constructor(
     private title: Title,
     private router: Router,
