@@ -21,6 +21,7 @@ import { VisitasApartamentoLineChartComponent } from './dashboard/visitas-aparta
 // Import library module
 import { NgxSpinnerModule } from "ngx-spinner";
 import { NgxMaskModule } from 'ngx-mask';
+import { NgxLoadingModule } from 'ngx-loading';
 
 
 @NgModule({
@@ -39,6 +40,7 @@ import { NgxMaskModule } from 'ngx-mask';
     NgOptionHighlightModule,
     NgApexchartsModule,
     NgxSpinnerModule,
+    NgxLoadingModule,
     NgxMaskModule.forRoot(),
   ],
   declarations: [
@@ -51,6 +53,7 @@ import { NgxMaskModule } from 'ngx-mask';
   ],
   exports: [
     LoginComponent,
+    VeiculosPesquisaComponent,
   ],
   providers: [
     DatePipe,

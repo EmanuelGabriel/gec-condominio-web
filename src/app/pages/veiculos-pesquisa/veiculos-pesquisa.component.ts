@@ -1,11 +1,12 @@
 import { ControleAcessoFiltro } from './../../models/ControleAcessoFiltro';
 import { VeiculoModel } from './../../models/VeiculoModel';
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { Router } from '@angular/router';
 import { NgxSpinnerService } from 'ngx-spinner';
 
 import { VeiculosService } from 'src/app/service/veiculos.service';
+import { ngxLoadingAnimationTypes } from 'ngx-loading';
 
 
 @Component({
@@ -17,15 +18,23 @@ export class VeiculosPesquisaComponent implements OnInit {
 
   //page = 0;
   //pageSize = 5;
+  @Input()
+  isLoading:boolean;
+
 
   veiculos: VeiculoModel[] = [];
   filtro = new ControleAcessoFiltro();
-  page = 0;
-  size = 5;
+  page: number;
+  size: number;
   collectionSize: number;
+  pageSizesList: number[];
+  isLoadingTabelaVeiculos: boolean;
+  isLoadingTotalVeiculos: boolean;
 
   bloco: string;
   numeroApartamento: string;
+
+  ngxLoadingAnimationTypes = ngxLoadingAnimationTypes;
 
   // blocos
   blocos = [
@@ -68,6 +77,10 @@ export class VeiculosPesquisaComponent implements OnInit {
     private spinner: NgxSpinnerService,
     private veiculosService: VeiculosService) {
 
+      this.page = 0;
+      this.size = 5;
+      this.pageSizesList = [5, 10, 20, 30];
+
       this.pesquisar();
     }
 
@@ -78,6 +91,9 @@ export class VeiculosPesquisaComponent implements OnInit {
 
   pesquisar() {
     this.spinner.show();
+    this.isLoadingTabelaVeiculos = true;
+    this.isLoadingTotalVeiculos = true;
+
     this.veiculosService.filtroControleAcesso(this.filtro, (this.page -1), this.size).subscribe(
       (resp) => {
         console.log(this.filtro);
@@ -85,15 +101,32 @@ export class VeiculosPesquisaComponent implements OnInit {
         this.collectionSize = resp.totalElements;
         console.log(resp);
 
+        this.isLoadingTabelaVeiculos = false;
+        this.isLoadingTotalVeiculos = false;
+
       },
       (err) => {
         this.spinner.hide();
+        this.isLoadingTabelaVeiculos = false;
+        this.isLoadingTotalVeiculos = false;
       },
       () => {
         this.spinner.hide();
+        this.isLoadingTabelaVeiculos = false;
+        this.isLoadingTotalVeiculos = false;
       }
     );
   }
+
+  /**
+   *
+   * @param event
+   */
+  handlePageSizeChange(event){
+    this.size = event;
+    this.pesquisar();
+  }
+
 
   /**
   buscarTodosVeiculos(){

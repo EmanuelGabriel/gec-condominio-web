@@ -21,6 +21,7 @@ import { AppRoutingModule } from './app.routing';
 import { ComponentsModule } from './components/components.module';
 import { PagesModule } from './pages/pages.module';
 import { NgxMaskModule } from 'ngx-mask';
+import { NgxLoadingModule } from 'ngx-loading';
 
 
 @NgModule({
@@ -37,6 +38,7 @@ import { NgxMaskModule } from 'ngx-mask';
     NgxSpinnerModule,
     InterceptorModule,
     NgxMaskModule.forRoot(),
+    NgxLoadingModule.forRoot({}),
     ToastrModule.forRoot({
       timeOut: 10000,
       positionClass: 'toast-top-center',

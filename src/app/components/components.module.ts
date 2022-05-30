@@ -10,12 +10,14 @@ import { CardStateComponent } from './card-state';
 import { InfoAlertsComponent } from './alerts/info';
 import { WarningAlertsComponent } from './alerts/warning';
 import { ErroAlertComponent } from './alerts/erro';
+import { NgxLoadingModule } from 'ngx-loading';
 
 @NgModule({
   imports: [
     CommonModule,
     RouterModule,
     NgbModule,
+    NgxLoadingModule,
   ],
   declarations: [
     FooterComponent,
