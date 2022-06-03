@@ -19,7 +19,12 @@ export class VeiculosService {
 
 constructor(private http: HttpClient) { }
 
-
+/**
+ *
+ * @param page
+ * @param size
+ * @returns
+ */
 buscarVeiculos(page, size) : Observable<Page>{
   const param = new HttpParams()
   .set('page', page)
@@ -78,6 +83,17 @@ filtroControleAcesso(filtro: ControleAcessoFiltro, page: number, size: number) :
   var url = environment.base_url.concat('parking-spot/filtro');
   console.log(`${url}?${param}`);
   return this.http.get<any>(`${url}?`, { params: param, headers: this.httpOptions.headers }).pipe(catchError(this.handleError));
+}
+
+/**
+ * Service que busca a quantidade de veículos por blocos
+ * @returns
+ */
+buscarQuantidadeVeiculosPorBlocos() : Observable<any> {
+  // localhost:8080/parking-spot/qtd-veiculos-blocos
+  var url = environment.base_url.concat('parking-spot/qtd-veiculos-blocos');
+  console.log(url);
+  return this.http.get<any>(`${url}`, { headers: this.httpOptions.headers }).pipe(catchError(this.handleError));
 }
 
 private handleError(errorResponse: HttpErrorResponse) {

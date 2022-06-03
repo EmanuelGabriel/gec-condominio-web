@@ -27,9 +27,15 @@ export class NavbarComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.expandirMenu = false;
+    this.expandirMenu = true;
     this.listTitles = ROUTES.filter(listTitle => listTitle);
-    this.username = sessionStorage.getItem("username");
+
+    document.getElementById("main-content").style.marginLeft = "3.2rem";
+    document.getElementById("logo-esquerda").style.display = "block";
+    document.getElementById("logo-esquerda").style.animation = "fadeIn 2s";
+    document.getElementById("logo-central").style.display = "none";
+
+
   }
 
   getTitle() {
@@ -43,17 +49,12 @@ export class NavbarComponent implements OnInit {
         return this.listTitles[item].title;
       }
     }
-    return '';
+    return 'dashboard';
   }
 
   /**
-   * Método responsável em realizar o logout da aplicaçaõ
+   *
    */
-  logout() {
-    this.authService.logout();
-    this.router.navigate(['/login']);
-  }
-
   ocultarExibirMenu() {
     if(!this.expandirMenu){
       document.getElementById("main-content").style.marginLeft = "3.2rem";

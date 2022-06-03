@@ -1,3 +1,5 @@
+import { BarChartVeiculosBlocosComponent } from './bar-chart-veiculos-blocos/bar-chart-veiculos-blocos.component';
+
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
@@ -11,6 +13,7 @@ import { InfoAlertsComponent } from './alerts/info';
 import { WarningAlertsComponent } from './alerts/warning';
 import { ErroAlertComponent } from './alerts/erro';
 import { NgxLoadingModule } from 'ngx-loading';
+import { NgApexchartsModule } from 'ng-apexcharts';
 
 @NgModule({
   imports: [
@@ -18,6 +21,7 @@ import { NgxLoadingModule } from 'ngx-loading';
     RouterModule,
     NgbModule,
     NgxLoadingModule,
+    NgApexchartsModule,
   ],
   declarations: [
     FooterComponent,
@@ -26,7 +30,8 @@ import { NgxLoadingModule } from 'ngx-loading';
     CardStateComponent,
     InfoAlertsComponent,
     WarningAlertsComponent,
-    ErroAlertComponent
+    ErroAlertComponent,
+    BarChartVeiculosBlocosComponent
   ],
   exports: [
     FooterComponent,
@@ -35,7 +40,8 @@ import { NgxLoadingModule } from 'ngx-loading';
     CardStateComponent,
     InfoAlertsComponent,
     ErroAlertComponent,
-    WarningAlertsComponent
+    WarningAlertsComponent,
+    BarChartVeiculosBlocosComponent
   ],
   providers:[]
 })
