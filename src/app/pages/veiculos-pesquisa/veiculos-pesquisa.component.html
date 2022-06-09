@@ -141,7 +141,7 @@
 
                 <!-- TABELA DE VEÍCULOS -->
                 <div class="table-responsive">
-                  <table class="table table-hover align-items-center table-flush">
+                  <table class="table align-items-center table-flush">
                     <thead class="thead-light">
                       <tr>
                         <th scope="col">#</th>
@@ -160,10 +160,10 @@
                     </thead>
 
                     <tbody *ngIf="this.collectionSize != 0 || isLoadingTabelaVeiculos">
-                      <tr *ngFor="let ca of veiculos; let i = index">
+                      <tr *ngFor="let ca of veiculos; let i = index" [ngClass]="i % 2 == 0 ? 'corTableLinhaImpar' : 'corTableLinhaPar'">
                         <td>
                           <!-- hash: 1d48fbcb-1dd0-40a7-b8dd-84716ca7f9ee --- '1dd0-40a7' -->
-                          <span [ngbTooltip]="ca.id" placement="bottom" >
+                          <span [ngbTooltip]="ca.id | uppercase" placement="bottom" >
                             {{ ca.id | slice:9:18 | uppercase }}
                           </span>
                         </td>

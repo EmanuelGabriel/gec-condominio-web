@@ -45,7 +45,7 @@ buscarVeiculos(page, size) : Observable<Page>{
  */
 filtroControleAcesso(filtro: ControleAcessoFiltro, page: number, size: number) : Observable<any> {
   let param = new HttpParams()
-  .set('page', page)
+  .set('page', page - 1)
   .set('size', size);
 
   if (filtro.numeroVaga) {

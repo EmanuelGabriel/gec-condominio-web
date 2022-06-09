@@ -77,7 +77,7 @@ export class VeiculosPesquisaComponent implements OnInit {
     private spinner: NgxSpinnerService,
     private veiculosService: VeiculosService) {
 
-      this.page = 0;
+      this.page = 1;
       this.size = 5;
       this.pageSizesList = [5, 10, 20, 30];
 
@@ -94,7 +94,7 @@ export class VeiculosPesquisaComponent implements OnInit {
     this.isLoadingTabelaVeiculos = true;
     this.isLoadingTotalVeiculos = true;
 
-    this.veiculosService.filtroControleAcesso(this.filtro, (this.page -1), this.size).subscribe(
+    this.veiculosService.filtroControleAcesso(this.filtro, this.page, this.size).subscribe(
       (resp) => {
         console.log(this.filtro);
         this.veiculos = resp.content;
@@ -128,37 +128,8 @@ export class VeiculosPesquisaComponent implements OnInit {
   }
 
 
-  /**
-  buscarTodosVeiculos(){
-    this.spinner.show();
-    this.veiculosService.buscarVeiculos((this.page -1), this.size).subscribe((resp) => {
-
-      console.log(resp);
-      this.veiculos = resp.content;
-      this.collectionSize = resp.totalElements;
-
-    },
-    (err) => {
-      this.spinner.hide();
-    },
-    () => {
-      this.spinner.hide();
-    }
-  );
-  } */
-
-
   irParaPaginaCadastroVeiculo(){
     this.router.navigate(["/novo-veiculo"]);
-  }
-
-  carregarDadosVeiculos() {
-    //this.spinner.show();
-    //this.controleAcessos = DADOS
-      //.map((veiculos, i) => ({id: i + 1, ...veiculos}))
-      //.slice((this.page - 1) * this.pageSize, (this.page - 1) * this.pageSize + this.pageSize);
-      //this.spinner.hide();
-      //console.log(this.controleAcessos);
   }
 
 
